@@ -1,0 +1,172 @@
+html, body, #content {
+	height: 100%;
+}
+
+#topnav, #header, #nav, #content, #footer {
+	clear: both;
+	width: 75%
+;}
+
+#header, #content {
+	margin: 0 20px 0 20px
+}
+
+body {
+	background-image: url('http://www.wallpaperup.com/uploads/wallpapers/2013/02/23/43845/90177fb32b7ec7273cf8ff5962e6b582.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: black;
+	color: white;
+	font-family: arial;
+	font-size: 13px;
+}
+
+body > #content {
+	height: auto;
+	min-height: 100%;	/* to inherit body overflow */
+}
+
+form {
+	clear: both;
+	/*border: 3px solid #eee; for testing purposes*/
+	margin: 10px auto;
+	float: right;
+}
+
+h1 {
+	/*border: 3px solid #eee; for testing purposes*/
+	margin-left: 10px;
+	text-align: left;
+}
+
+h2, h4, p {
+	clear: both;
+	float: left;
+}
+
+div, h2, h4, form{
+	margin: 0;
+	padding: 0;
+}
+
+article {
+	padding: 20px;
+	display: block;
+}
+
+hr.fadestyle {
+	clear: both;
+	margin: 7rem 20px 1rem 20px;
+	border: 0;
+	height: 2px;
+	background: black;
+}
+
+#topnav {
+	/*border: 3px solid #eee; for testing purposes*/
+	margin: 0 auto 0 auto;
+	padding: 15px 0 15px 0;
+	display: block;
+	background-color: #21B02A;
+	text-align: left;
+}
+	#topnav ul {
+		padding: 0;
+	}
+		#topnav ul li {
+			padding: 0;
+			display: inline-block;
+		}
+			#topnav ul li a {
+				padding: 10px;
+				color: white;
+				text-decoration: none;
+				text-transform: uppercase;
+			}
+				#topnav ul li a:hover {
+					background: #2C5C2F;
+					transition-duration: 500ms;
+					transition-timing-function: ease-out;
+				}
+
+#searchbox {
+	margin: 10px auto 0 auto;
+	padding-right: 10px;
+}
+
+#header {
+	/*border: 3px solid #eee; for testing purposes*/
+	background: black;
+	display: block;
+	margin: 0 auto 10px auto;
+	padding: 10px 0 10px 0;
+}
+
+/* navigational bar */
+#nav {
+	/*border: 3px solid #eee; for testing purposes*/
+	margin: 13px auto 5px auto;
+	display: block;
+	background-color: black;
+	float: right;
+	text-align: center;
+	width: auto;
+}
+	#nav ul {
+		padding: 0;
+	}
+		#nav ul li {
+			padding: 0;
+			display: inline-block;
+		}
+			#nav ul li a {
+				padding: 13px;
+				color: white;
+				text-decoration: none;
+				text-transform: uppercase;
+			}
+				/* transition when hovered */
+			 	#nav ul li a:hover {
+					background: gray;
+					transition-duration: 500ms;
+					transition-timing-function: ease-out;
+				}
+
+/* Contains the content and subheader */
+#content {
+	background-color: #141514;
+	margin: 0 auto 0 auto;
+	border: 1px solid black;
+	color: #C0C0C0;
+}
+	#content h2 {
+		color: #18431B;
+	}
+
+	#content h4 a{
+		color: #002CBC;
+		text-decoration: none;
+	}
+		#content h4 a:hover {
+			text-decoration: underline;
+			transition-duration: 500ms;
+			transition-timing-function: ease-out;
+		}
+
+/* footies */
+#footer {
+	clear: both;
+	margin: 0 auto 10px auto;
+	position: relative;
+	z-index: 10;
+	height: 3em;
+	margin-top: 1em;
+}
+	#footer p {
+		float: right;
+		text-align: right;
+		text-transform: uppercase;
+		font-size: 80%;
+		color: #eee;
+	}
